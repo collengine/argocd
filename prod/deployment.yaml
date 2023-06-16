@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsecops-kahawa-coders-frontend
+spec:
+  selector:
+    matchLabels:
+      app: devsecops-kahawa-coders-frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: devsecops-kahawa-coders-frontend
+    spec:
+      containers:
+      - name: devsecops-kahawa-coders-frontend
+        image: onekoech/devsecops-kahawa-coders-frontend:uat-e5d09bcd-20230616103213
+        ports:
+        - containerPort: 3000
