@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: devsecops-kahawa-coders-frontend
-        image: onekoech/devsecops-kahawa-coders-frontend:uat-e5d09bcd-20230616103213
+        image: onekoech/devsecops-kahawa-frontend:uat-e5d09bcd-20230616103213
         ports:
         - containerPort: 3000
